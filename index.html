@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,800&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Zoro</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="images/Zoro.png" alt="" />
+      <div class="social">
+        <img src="images/facebook.png" alt="" />
+        <img src="images/instagram.png" alt="" />
+        <img src="images/whatsapp.png" alt="" />
+      </div>
+    </header>
+    <section>
+      <div style="display: flex; justify-content: center">
+        <h1>.Anime Hoodies</h1>
+      </div>
+      <img src="images/back.png" id="left" alt="" />
+      <div id="pros" class="pros">
+        <div class="pro1">
+          <img
+            name="go"
+            onclick="replace(this)"
+            id="Gojo hoodie"
+            src="images/pro1.jpg"
+            alt=""
+          />
+          <h2>Gojo hoodie <br />250 LE.</h2>
+          <button onclick="replace(go)">Order now</button>
+        </div>
+        <div class="pro2">
+          <img
+            onclick="replace(this)"
+            id="Itatchi hoodie"
+            name="it"
+            src="images/pro2.jpg"
+            alt=""
+          />
+          <h2>Itatchi hoodie <br />250 LE.</h2>
+          <button onclick="replace(it)">Order now</button>
+        </div>
+        <div class="pro3">
+          <img
+            name="aot"
+            id="Aot hoodie"
+            onclick="replace(this)"
+            src="images/pro3.jpg"
+            alt=""
+          />
+          <h2>Aot hoodie <br />250 LE.</h2>
+          <button onclick="replace(aot)">Order now</button>
+        </div>
+        <div class="pro4">
+          <img
+            name="ne"
+            onclick="replace(this)"
+            id="Nezeku hoodie"
+            style="height: 266.6666667px"
+            src="images/pro4.jpg"
+            alt=""
+          />
+          <h2>Nezeku hoodie <br />250 LE.</h2>
+          <button onclick="replace(ne)">Order now</button>
+        </div>
+        <div class="pro5">
+          <img
+            name="ki"
+            onclick="replace(this)"
+            id="Kilwa hoodie"
+            src="images/pro5.jpg"
+            alt=""
+          />
+          <h2>Kilwa hoodie <br />250 LE.</h2>
+          <button onclick="replace(ki)">Order now</button>
+        </div>
+        <div class="pro6">
+          <img
+            name="or"
+            onclick="replace(this)"
+            id="Zenitsu hoodie"
+            src="images/pro6.jpg"
+            alt=""
+          />
+          <h2>Zenitsu hoodie <br />250 LE.</h2>
+          <button onclick="replace(or)">Order now</button>
+        </div>
+        <div style="margin-right: 60px" class="pro7">
+          <img
+            name="re"
+            onclick="replace(this)"
+            id="Regular hoodie"
+            style="height: 266.6666667px"
+            src="images/pro7.jpg"
+            alt=""
+          />
+          <h2>Regular hoodie <br />250 LE.</h2>
+          <button onclick="replace(re)">Order now</button>
+        </div>
+      </div>
+      <img src="images/next.png" id="right" alt="" />
+      <footer>
+        <div class="order" id="order">
+          <div class="empty">?</div>
+          <h1>Choose an item first</h1>
+        </div>
+      </footer>
+    </section>
+    <div id="add" class="add-cart">
+      <img
+        style="width: 100px; position: relative; left: 35%"
+        src="images/Zoro - Copy.png"
+        alt=""
+      />
+      <h3 id="ques">Are you sure you wanna add this item to the cart ?</h3>
+      <div class="yn">
+        <button id="cancel">Cancel</button>
+        <button id="yes"
+          style="
+            background-color: orangered;
+            color: white;
+            border: 1px solid black;
+          "
+        >
+          Yes
+        </button>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="cart" onclick="cont()"><img  class="cartico" src="images/trolley-cart.png" alt=""><div id="num"></div></div>
+    <div class="cont" id="cont">
+      <div style="display:flex;justify-content: space-between;" class="btns">
+<button id="close" onclick="close()">X</button>
+<button style="padding:5px;">continue prachase</button>
+    </div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
